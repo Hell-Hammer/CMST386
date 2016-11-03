@@ -11,13 +11,13 @@ h2 {
 }
 
 a:hover {
-    background-color: yellow;
+    background-color: green;
 }
 
 button {
 	border: none;
-	background: #3a7999;
-	color: #f2f2f2;
+	background: black;
+	color: red;
 	padding: 10px;
 	font-size: 18px;
 	border-radius: 5px;
