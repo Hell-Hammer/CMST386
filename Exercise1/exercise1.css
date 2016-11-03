@@ -7,7 +7,7 @@ h2 {
   text-align: left;
   text-decoration: underline;
   font-weight: bolder;
-  color: purple;
+  color: black;
 }
 
 a:hover {
@@ -16,8 +16,8 @@ a:hover {
 
 button {
 	border: none;
-	background: #3a7999;
-	color: #f2f2f2;
+	background: black;
+	color: red;
 	padding: 10px;
 	font-size: 18px;
 	border-radius: 5px;
@@ -49,7 +49,7 @@ button:after {
 	left: 0px;
 	width: 100%;
 	position: absolute;
-	background: #3a9999;
+	background: blue;
 	border-radius: 5px;
 	content: 'Sucks!';
 	transform-origin: left bottom;
