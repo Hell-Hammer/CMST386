@@ -1,5 +1,9 @@
-body {background-color: silver}
-
+body {
+  background-color: silver
+}
+h2 {
+  text-align: left;
+}
 
 
 #navbar ul {
@@ -31,7 +35,9 @@ div.img {
    border: 1px solid #ccc;
    float: left;
    width: 180px;
+   margin: auto;
 }
+``
 
 div.img:hover {
    border: 1px solid #777;
