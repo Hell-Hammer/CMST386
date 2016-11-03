@@ -51,7 +51,7 @@ button:after {
 	position: absolute;
 	background: #3a9999;
 	border-radius: 5px;
-	content: 'Flipped';
+	content: 'Its working!';
 	transform-origin: left bottom;
 	transform: rotateX(90deg);
 }
