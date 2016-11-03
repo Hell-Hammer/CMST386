@@ -47,7 +47,7 @@ button:hover {
 }
 
 
-button.button:before {
+.button2:before {
 	content:'';
 	position: absolute;
 	top: 0px;
@@ -58,7 +58,7 @@ button.button:before {
 	border-radius: 5px;
 	transition: all 2s ease;
 }
-button.button:hover:before {
+.button2:hover:before {
 	width: 100%;
 }
 
