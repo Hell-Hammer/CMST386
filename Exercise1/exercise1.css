@@ -16,6 +16,19 @@ a:hover {
 
 button {
 	transform-style: preserve-3d;
+  button {
+  	border: none;
+  	background: black;
+  	color: red;
+  	padding: 10px;
+  	font-size: 18px;
+  	border-radius: 5px;
+  	position: relative;
+  	box-sizing: border-box;
+  	transition: all 500ms ease;
+  }
+  
+
 }
 button:after {
 	top: -100%;
