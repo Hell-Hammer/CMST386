@@ -40,11 +40,11 @@ button:hover:before {
 	width: 100%;
 }
 
-button2 {
+button {
 	transform-style: preserve-3d;
 }
 
-button2:after {
+button:after {
 	top: -100%;
 	left: 0px;
 	width: 100%;
@@ -55,7 +55,7 @@ button2:after {
 	transform-origin: left bottom;
 	transform: rotateX(90deg);
 }
-button2:hover {
+button:hover {
 	transform-origin: center bottom;
 	transform: rotateX(-90deg) translateY(100%);
 }
