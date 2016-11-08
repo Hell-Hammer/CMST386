@@ -2,7 +2,7 @@
 body {
 
   /* can be treated like a fallback */
-  background-color: red;
+
 
   /* will be "on top", if browser supports it */
   background-image: linear-gradient(red, orange);
