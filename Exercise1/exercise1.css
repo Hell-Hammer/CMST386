@@ -133,15 +133,16 @@ a:hover {
  }
 
 div.img {
-   margin: 5px;
-   border: 1px solid #ccc;
-   float: left;
-   width: 180px;
-   margin: auto;
+  text-align: center;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  margin: auto;
 }
 
 div.img:hover {
-   border: 1px solid #777;
+  border: 1px solid #777;
 }
 
 div.img img {
@@ -154,5 +155,5 @@ div.desc {
    text-align: center;
 }
 #bold {
-  font-size: 30;
+  font-size: 20px;
 }
