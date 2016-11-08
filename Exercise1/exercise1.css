@@ -10,7 +10,7 @@ body {
   /* these will reset other properties, like background-position, but it does know what you mean */
   background: red;
   background: linear-gradient(red, orange);
-  background-size: cover;
+  background-size: cover;;
   background-repeat: no-repeat;
 }
 
