@@ -1,10 +1,9 @@
 
 body {
   background: red;
-  background: linear-gradient( 45deg, #66ccff, red );           /* A gradient on 45deg axis starting #66ccff and finishing red */
-              linear-gradient( to left top, #66ccff, red);      /* A gradient going from the bottom right to the top left starting blue and
-                                                                finishing red */
-              linear-gradient( 0deg, #66ccff, green 40%, red );
+  background: linear-gradient( 45deg, #66ccff, red );
+              linear-gradient( to left top, #66ccff, red);
+              linear-gradient( 0deg, #66ccff, green 40%, red);
 
   background-size: auto;
   background-repeat: no-repeat;
