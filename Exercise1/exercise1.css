@@ -11,7 +11,7 @@ body {
   background: red;
   background: linear-gradient(red, orange);
   background-size: auto;;;
-  background-repeat: space;;
+  background-repeat: no-repeat;;;
 }
 
 h2 {
