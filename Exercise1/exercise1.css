@@ -1,9 +1,7 @@
 
 body {
   background: red;
-  background: linear-gradient( 45deg, #66ccff, red );
-              linear-gradient( to left top, #66ccff, red);
-              linear-gradient( 0deg, #66ccff, green 40%, red);
+  background: linear-gradient( black, red );
   background-repeat: no-repeat;
   background-size: auto;
 }
