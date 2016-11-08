@@ -1,6 +1,6 @@
 
 body {
-  background: linear-gradient( red, black );
+  background: linear-gradient( #cc0000, #ff3300 );
   background-repeat: no-repeat;
   background-size: auto;
 }
