@@ -100,6 +100,18 @@ a:hover {
 	}
 }
 
+.button4 {
+	border: none;
+	background: black;
+	color: red;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease;
+}
+
 .button4:hover {
 	animation: bounce 1s;
 }
