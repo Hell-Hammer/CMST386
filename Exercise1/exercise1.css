@@ -47,7 +47,7 @@ a:hover {
 	position: absolute;
 	background: black;
 	border-radius: 5px;
-	content: 'Sucks!';
+	content: 'Is nice!';
 	transform-origin: left bottom;
 	transform: rotateX(90deg);
 }
