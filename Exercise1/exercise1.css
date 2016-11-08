@@ -1,7 +1,11 @@
 
 body {
   background: red;
-  background: linear-gradient(red, orange);
+  background: linear-gradient( 45deg, blue, red );           /* A gradient on 45deg axis starting blue and finishing red */
+              linear-gradient( to left top, blue, red);      /* A gradient going from the bottom right to the top left starting blue and
+                                                            finishing red */
+              linear-gradient( 0deg, blue, green 40%, red );
+
   background-size: auto;
   background-repeat: no-repeat;
 }
