@@ -1,14 +1,5 @@
 
 body {
-
-  /* can be treated like a fallback */
-
-
-  /* will be "on top", if browser supports it */
-  background-image: linear-gradient(red, orange);
-
-  /* these will reset other properties, like background-position, but it does know what you mean */
-  background: red;
   background: linear-gradient(red, orange);
   background-size: auto;
   background-repeat: no-repeat;
