@@ -133,7 +133,7 @@ a:hover {
  }
 
 div.img {
-  text-align: center;
+  padding-left: 10px;
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
@@ -142,7 +142,6 @@ div.img {
 }
 
 div.img:hover {
-  text-align: center;
   border: 1px solid #777;
 }
 
