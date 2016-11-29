@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>
+Miles or Kilometers Converter
+</title>
+<script type="text/javascript">
+var sEntry, fEntry,
+ fResult;
+sEntry
+=
+ window.prompt
+(
+"Is input distance miles or km? (m or k)"g
+,
+"m"
+);
+if
+(s
+Entry
+==
+"m"
+)
+{
+fEntry
+=
+ parseFloat
+(
+window.prompt
+(
+"Enter miles: "
+,
+"0"
+));
+fResult
+=
+ Entry
+*
+1.609
+;
+document.write
+(
+"<p>"
++f
+Entry
++
+" miles = "
++f
+Result
++
+" km</p>"
+);
+}
+else
+{
+fEntry
+=
+ parseFloat
+(
+window.prompt
+(
+"Enter kilometers: "
+,
+"0"
+));
+fResult
+=
+ fEntry
+/
+1.609
+;
+document.write
+(
+"<p>"
++ f
+Entry
++
+" km = "
++ f
+Result
++
+" miles</p>"
+);
+}
+document.write
+(
+"<p>Reload for another conversion</p>"
+);
+</script>
+</head>
+<body>
+</body>
+</html>
