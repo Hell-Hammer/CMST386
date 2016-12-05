@@ -157,6 +157,42 @@ div.desc {
   font-size: 20px;
 }
 
-table {
+table{
+  border: 3px solid;
+  border-color: green;
+  border-collapse: collapse;
+  width: 45%;
+  margin: auto;
   text-align: center;
+  font-family: Verdana;
+  font-size: 16px;
+  font-weight: 800;
+}
+th,td{
+  border: 3px solid;
+  border-color: green;
+}
+
+.div1 {
+  text-align: center;
+}
+
+.div2 {
+  border: 3px solid;
+  border-color: green;
+  border-collapse: collapse;
+  width: 45%;
+  margin: auto;
+  text-align: left;
+  font-family: Verdana;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.img1 {
+  float: right;
+  height: 100px;
+  width: 100px;
+  margin-top: 18px;
+  margin-right: 50px;
 }

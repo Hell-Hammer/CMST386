@@ -6,26 +6,37 @@
 
     <meta charset="UTF-8">
     <meta name="keywords" content="Jair Daza, Hellhammer, Atom, HTML, CSS">
-
+    <script type="text/javascript" src="java.js"></script>
 </head>
 
 <body>
   <hr>
-      <p style="text-align:center">
-        <a href="../">{Home}</a> &nbsp;
-        <a href="../Exercise1/index.html">{Exercise 1}</a> &nbsp;
-        <a href="index.html">{Exercise 2}</a> &nbsp;
-        <a href="temperatures.html">{Exercise 3}</a> &nbsp;
-        <a href="">{Exercise 4}</a> &nbsp;
-      </p>
+      <div id="navbar">
+        <ul>
+      	<li><a href="../">Home Page</a></li>
+      	<li><a href="index.html">Exercise 1</a></li>
+      	<li><a href="#">Exercise 2</a></li>
+      	<li><a href="#">Exercise 3</a></li>
+      	<li><a href="#">Exercise 4</a></li>
+        </ul>
 
-<h1>Celcius to Fahrenheit or Fahrenheit to Celsius</h1>
+<div class="div1">
+  <h1>Celcius to Fahrenheit or Fahrenheit to Celsius</h1>
 
+<div class="div2">
+  <div class="div1">
+  <p>Click the button below to use my temperature converter.</p>
+      <button onclick="converter()">Temp Converter</button></div>
+</div>
+
+<br>
+
+<div class="div2">
+<img class="img1" src="Temp.gif">
 <p>Insert a number into one of the input fields below:</p>
-
 <p><input id="c" onkeyup="convert('C')"> degrees Celsius</p>
-
 <p><input id="f" onkeyup="convert('F')"> degrees Fahrenheit</p>
+</div>
 
 <script>
 function convert(degree) {
@@ -43,206 +54,27 @@ function convert(degree) {
 <br>
 
 <table>
-
-		<thead>
-		<tr>
-			<th>Fahrenheit (°F)</a></th>
-			<th>Celsius (°C)</a></th>
-			<th>Description</th>
-		</tr>
-		</thead>
-
-		<tbody>
-		<tr>
-			<td>-459.67 °F</td>
-			<td>-273.15 °C</td>
-			<td style="background:#f8f8f8; text-align:left">Absolute Zero Temperature</td>
-		</tr>
-		<tr>
-			<td>-50 °F</td>
-			<td>-45.56 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>-40 °F</td>
-			<td>-40.00 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>-30 °F</td>
-			<td>-34.44 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>-20 °F</td>
-			<td>-28.89 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>-10 °F</td>
-			<td>-23.33 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>0 °F</td>
-			<td>-17.78 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>10 °F</td>
-			<td>-12.22 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>20 °F</td>
-			<td>-6.67 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>30 °F</td>
-			<td>-1.11 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td style="background:#f8f8f8;">32 °F</td>
-			<td style="background:#f8f8f8;">0 °C</td>
-			<td style="background:#f8f8f8; text-align:left">freezing/melting point&nbsp;of water</td>
-		</tr>
-		<tr>
-			<td>40 °F</td>
-			<td>4.44 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>50 °F</td>
-			<td>10.00 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>60 °F</td>
-			<td>15.56 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>70 °F</td>
-			<td>21.11 °C</td>
-		</tr>
-		<tr>
-			<td>80 °F</td>
-			<td>26.67 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>90 °F</td>
-			<td>32.22 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>98.6 °F</td>
-			<td>37 °C</td>
-		</tr>
-		<tr>
-			<td>100 °F</td>
-			<td>37.78 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>110 °F</td>
-			<td>43.33 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>120 °F</td>
-			<td>48.89 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>130 °F</td>
-			<td>54.44 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>140 °F</td>
-			<td>60.00 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>150 °F</td>
-			<td>65.56 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>160 °F</td>
-			<td>71.11 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>170 °F</td>
-			<td>76.67 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>180 °F</td>
-			<td>82.22 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>190 °F</td>
-			<td>87.78 °C</td>
-			<td>&nbsp;</td>
-			</tr>
-		<tr>
-			<td>200 °F</td>
-			<td>93.33 °C</td>
-			<td>&nbsp;</td>
-			</tr>
-		<tr>
-			<td>212 °F</td>
-			<td>100 °C</td>
-			<td style="background:#f8f8f8; text-align:left">boiling point of water</td>
-			</tr>
-		<tr>
-			<td>300 °F</td>
-			<td>148.89 °C</td>
-			<td>&nbsp;</td>
-			</tr>
-		<tr>
-			<td>400 °F</td>
-			<td>204.44 °C</td>
-			<td>&nbsp;</td>
-			</tr>
-		<tr>
-			<td>500 °F</td>
-			<td>260.00 °C</td>
-			<td>&nbsp;</td>
-			</tr>
-		<tr>
-			<td>600 °F</td>
-			<td>315.56 °C</td>
-			<td>&nbsp;</td>
-			</tr>
-		<tr>
-			<td>700 °F</td>
-			<td>371.11 °C</td>
-			<td>&nbsp;</td>
-			</tr>
-		<tr>
-			<td>800 °F</td>
-			<td>426.67 °C</td>
-			<td>&nbsp;</td>
-			</tr>
-		<tr>
-			<td>900 °F</td>
-			<td>482.22 °C</td>
-			<td>&nbsp;</td>
-			</tr>
-		<tr>
-			<td>1000 °F</td>
-			<td>537.78 °C</td>
-			<td>&nbsp;</td>
-		</tr>
-		</tbody>
-	</table>
+  <tr>
+   <th>Fahrenheit</th>
+   <th>Celcius</th>
+  </tr>
+  <tr>
+   <td>-0</td>
+   <td>-17.7</td>
+  </tr>
+  <tr>
+   <td>32</td>
+   <td>0</td>
+  </tr>
+  <tr>
+   <td>50</td>
+   <td>10</td>
+  </tr>
+  <tr>
+   <td>-100</td>
+   <td>-37.7</td>
+  </tr>
+</table>
 
 </body>
 </html>
