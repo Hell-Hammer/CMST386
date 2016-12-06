@@ -17,7 +17,8 @@
       <br>
       <fieldset>
         <legend>Receipts</legend>
-          How many Receipts do you have: <input type="number" id="receiptqty" class="qty" min="0" max="10" value="0" onchange="unhideReceipts()"><br>
+        <div>How many Receipts do you have: <input type="number" id="receiptqty" class="qty" min="0" max="10" value="0" onchange="unhideReceipts()"><br>
+        </div>
         <div id="flexcolumn">
           <table id="addingreceipts" onchange="addSum()" hidden>
               <tr class="hide-tr" hidden>
@@ -109,7 +110,7 @@
             </table>
       </fieldset><br>
       <fieldset>
-        <legend>Winnings</legend>
+        <legend>Total</legend>
         <table class="chips">
           <tr>
             <td>Subtotal $:</td>
