@@ -13,13 +13,15 @@
 
 <article>
   <form>
+    <div style="text-align: center">
     <h1>Counting Program</h1>
       <br>
       <fieldset>
         <legend>Receipts</legend>
-        <div>How many Receipts do you have: <input type="number" id="receiptqty" class="qty" min="0" max="10" value="0" onchange="unhideReceipts()"></div>
-        <br>
-        <div>
+        How many Receipts do you have: <input type="number" id="receiptqty" class="qty" min="0" max="10" value="0" onchange="unhideReceipts()">
+      </div>
+      <br>
+      <div>
           <table id="addingreceipts" onchange="addSum()" hidden>
               <tr class="hide-tr" hidden>
                 <td>Receipt 1:</td>
