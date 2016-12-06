@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stephen Harrington - WebDesign - CMST386 - Exercise 4</title>
+  <meta name="description" content="The program will assist the cashier by calculating the value of chips based on their
+  quantity. You observe that the general sequence of events at the cashier window:
+  1. Ask customers for receipts for all chips purchased and sum is calculated.
+  2. If the customer is a U.S. Citizenthey need to enter Social Security Number.
+  3. Customer submits all chips to cash out. Chips are counted and the total sum is
+  calculated based on the following values:
+  • Black = $5
+  • Blue = $20
+  • Red = $50
+  • Green = $100
+  • Purple = $500
+  • Gold = $1000
+  3. If the customer wins they a 10% withholding tax will be applied to winnings only
+  and subtracted from the total value of chips cashed out.
+  4. The form results will be the receipt for the transaction and printed.
+  ">
+  <meta name="keywords" content="HTML5, CSS3, CMST386, Stephen Harrington, About Me">
+  <link rel="stylesheet" href="../exercise1/styles.css" media="screen" title="no title">
+  <script type="text/javascript" src="./scripts/receipts.js"></script>
+  <script type="text/javascript" src="./scripts/ssn.js"></script>
+  <script type="text/javascript" src="./scripts/subtotal.js"></script>
+  <script type="text/javascript" src="./scripts/total.js"></script>
+</head>
+<body>
+<header>
+  <p><img id="logo" src="images/spharrington.png" alt="Logo of SPHarrington" /></p>
+</header>
+<nav>
+  <ul>
+  <li><a href="../index.html">Home</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Exercise 1</a>
+    <div class="dropdown-content">
+      <a href="../exercise1/index.html">Index</a>
+      <a href="../exercise1/gallery.html">Gallery</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Exercise 2</a>
+    <div class="dropdown-content">
+      <a href="../exercise2/index.html">Index</a>
+      <a href="../exercise2/contact.html">Contact</a>
+    </div>
+  </li>
+  <li class="dropdown">
+      <a href="#" class="dropbtn">Exercise 3</a>
+      <div class="dropdown-content">
+        <a href="../exercise3/temperatures.html">Temperatures</a>
+        <a href="../exercise3/temperatures0.html">Temperatures - B</a>
+        <a href="../exercise3/flowchart.html">Flowchart</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Exercise 4</a>
+      <div class="dropdown-content">
+        <a href="../exercise4/casino.html">Casino</a>
+      </div>
+    </li>
+</ul>
+</nav>
+<article>
+  <form>
+    <h1>Casino Chip Counting Program</h1>
+    <fieldset id="casino">
+      <br>
+      <fieldset class="program">
+        <legend>Customer Information</legend>
+        <table class="customerinfo">
+          <tr>
+            <td class="right">First Name:</td>
+            <td><input type="text" name="fname" required></td>
+          </tr>
+          <tr>
+            <td class="right">Last Name:</td>
+            <td><input type="text" name="lname" required></td>
+          </tr>
+          <tr>
+            <td class="right">U.S Citizen:</td>
+            <td><select size="1" id="citizen" onchange="allowSSN()">
+              <option value="1">Yes</option>
+              <option value="0" selected>No</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td class="right">Social Security Number:</td>
+            <td><input type="text" id="ssn" disabled></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br>
+      <fieldset class="program">
+        <legend>Receipts</legend>
+          How many Receipts do you have: <input type="number" id="receiptqty" class="qty" min="0" max="10" value="0" onchange="unhideReceipts()"><br>
+        <div id="flexcolumn">
+          <table id="addingreceipts" onchange="addSum()" hidden>
+              <tr class="hide-tr" hidden>
+                <td>Receipt 1:</td>
+                <td><input type="number" class="hiddenreceipts" name="receipts" value="0" min=0 hidden></td>
+              </tr>
+              <tr class="hide-tr" hidden>
+                <td>Receipt 2:</td>
+                <td><input type="number" class="hiddenreceipts" name="receipts" value=0 min=0 hidden></td>
+              </tr>
+              <tr class="hide-tr" hidden>
+                <td>Receipt 3:</td>
+                <td><input type="number" class="hiddenreceipts" name="receipts" value=0 min=0 hidden></td>
+              </tr>
+              <tr class="hide-tr" hidden>
+                <td>Receipt 4:</td>
+                <td><input type="number" class="hiddenreceipts" name="receipts" value=0 min=0 hidden></td>
+              </tr>
+              <tr class="hide-tr" hidden>
+                <td>Receipt 5:</td>
+                <td><input type="number" class="hiddenreceipts" name="receipts" value=0 min=0 hidden></td>
+              </tr>
+              <tr class="hide-tr" hidden>
+                <td>Receipt 6:</td>
+                <td><input type="number" class="hiddenreceipts" name="receipts" value=0 min=0 hidden></td>
+              </tr>
+              <tr class="hide-tr" hidden>
+                <td>Receipt 7:</td>
+                <td><input type="number" class="hiddenreceipts" name="receipts" value=0 min=0 hidden></td>
+              </tr>
+              <tr class="hide-tr" hidden>
+                <td>Receipt 8:</td>
+                <td><input type="number" class="hiddenreceipts" name="receipts" value=0 hidden></td>
+              </tr>
+              <tr class="hide-tr" hidden>
+                <td>Receipt 9:</td>
+                <td><input type="number" class="hiddenreceipts" name="receipts" value=0 hidden></td>
+              </tr>
+              <tr class="hide-tr" hidden>
+                <td>Receipt 10:</td>
+                <td><input type="number" class="hiddenreceipts" name="receipts" value=0 hidden></td>
+              </tr>
+              <tr>
+                <td><strong>Sum:</strong></td>
+                <td><input type="number" class="hiddenreceipts" id="receiptsum" value=0 readonly></td>
+              </tr>
+          </table>
+        </div>
+      </fieldset>
+    <br>
+      <fieldset class="program">
+          <legend>Chip Quanity</legend>
+            <table id="chipcounter" class="chips" onchange="chipCalculator()">
+              <tr>
+                <th>Color</th>
+                <th>$Value</th>
+                <th>Quanity</th>
+              </tr>
+              <tr>
+                <td>Black:</td>
+                <td><input type="number" name="chipvalue" class="value" value=5 readonly></td>
+                <td><input id="black" type="number" name="chipqty" class="qty" min="0" value=0></td>
+              </tr>
+              <tr>
+                <td>Blue:</td>
+                <td><input type="number" class="value" name="chipvalue" value=20 readonly></td>
+                <td><input id="blue" type="number" name="chipqty" class="qty" min="0" value=0></td>
+              </tr>
+              <tr>
+                <td>Red:</td>
+                <td><input type="number" class="value" name="chipvalue" value=50 readonly></td>
+                <td><input id="red" type="number" name="chipqty" class="qty" min=0 value=0></td>
+              </tr>
+              <tr>
+                <td>Green:</td>
+                <td><input type="number" class="value" name="chipvalue" value=100 readonly></td>
+                <td><input id="green" type="number" name="chipqty" class="qty" min="0" value=0></td>
+              </tr>
+              <tr>
+                <td>Purple:</td>
+                <td><input type="number" class="value" name="chipvalue" value=500 readonly></td>
+                <td><input id="purple" type="number" name="chipqty" class="qty" min=0 value=0></td>
+              </tr>
+              <tr>
+                <td>Gold:</td>
+                <td><input type="number" class="value" name="chipvalue" value=1000 readonly></td>
+                <td><input id="gold" type="number" name="chipqty" class="qty" min=0 value=0></td>
+              </tr>
+            </table>
+      </fieldset><br>
+      <fieldset class="program">
+        <legend>Winnings</legend>
+        <table class="chips">
+          <tr>
+            <td>Subtotal $:</td>
+            <td><input type="number" class="hiddenreceipts" id="subtotal" value=0 readonly></td>
+          </tr>
+          <tr>
+            <td>Taxes $:</td>
+            <td><input type="number" id="taxes" value=0 class="hiddenreceipts" readonly></td>
+          </tr>
+          <tr>
+            <td>Total $:</td>
+            <td><input type="number" id="total" value=0 class="hiddenreceipts" readonly></td>
+          </tr>
+        </table>
+      </fieldset>
+    </fieldset>
+  </form>
+</article>
+</body>
+</html>
