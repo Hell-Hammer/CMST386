@@ -25,3 +25,11 @@
 
 
 #line { color: white }
+
+h3 {
+   text-align: center; color: white; font-family: cursive
+ }
+
+body {
+  background-image: url( SpaceBackground_Index3.jpg )
+}
