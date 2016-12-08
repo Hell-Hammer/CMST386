@@ -12,6 +12,7 @@
  }
 
 #navbar ul li a {
+ font-size: 115%;
  font-family: cursive;
  text-decoration: none;
  padding: .2em 1em;
@@ -28,9 +29,30 @@
 #line { color: white }
 
 h3 {
-   text-align: center; color: white; font-family: cursive;
+   text-align: center; font-size: 300%; color: white; font-family: cursive;
  }
 
 body {
   background-image: url( SpaceBackground_Index3.jpg )
+}
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
