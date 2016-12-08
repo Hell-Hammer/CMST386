@@ -12,6 +12,7 @@
  }
 
 #navbar ul li a {
+ font-family: cursive;
  text-decoration: none;
  padding: .2em 1em;
  color: #fff;
@@ -26,8 +27,8 @@
 
 #line { color: white }
 
-h3 {
-   text-align: center; color: white; font-family: cursive
+p {
+   text-align: center; color: white; font-family: cursive;
  }
 
 body {
