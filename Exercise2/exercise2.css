@@ -1,30 +1,4 @@
 
-#navbar ul {
- margin: 0;
- padding: 5px;
- list-style-type: none;
- text-align: center;
- background-color: #000;
- }
-
-#navbar ul li {
- display: inline;
- }
-
-#navbar ul li a {
- font-size: 115%;
- font-family: cursive;
- text-decoration: none;
- padding: .2em 1em;
- color: #fff;
- background-color: #000;
- }
-
-#navbar ul li a:hover {
- color: #000;
- background-color: #fff;
- }
-
 
 #line { color: white }
 
@@ -54,5 +28,77 @@ body {
 }
 
 .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Jhonattan's css*/
+#navbar {
+  display:flex; justify-content: center;
+}
+
+#navbar ul {
+ margin: 0;
+ padding: 5px;
+ list-style-type: none;
+ overflow: hidden;
+ text-align: center;
+ background-color: #000;
+ }
+
+#navbar ul li {
+ float: left;
+ flex: 1;
+ }
+
+#navbar ul li a {
+ text-decoration: none;
+ padding: .2em 1em;
+ color: #fff;
+ background-color: #000;
+ }
+
+#navbar ul li a:hover {
+ color: #000;
+ background-color: #fff;
+ }
+
+
+li a, .dropbtn {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+border-right: 1px solid #7b5499;
+text-decoration: none;
+transition: 1s;
+
+}
+li a:hover, .drop:hover {
+background-color: #7b5499;
+color: #ffffff;
+
+}
+.active {
+    background-color: #7b5499;
+    border: 1px;
+}
+li.drop {
+    display: inline-block;
+}
+.dropstuff {
+  display: none;
+    position: absolute;
+    background-color: #6441a5;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropstuff a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+}
+.drop:hover .dropstuff {
     display: block;
 }
