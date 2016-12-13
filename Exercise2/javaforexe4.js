@@ -71,7 +71,7 @@ function calculateTotal(){
   totals.value = 0;
   if((sub.value - receipts.value) > 0){
     taxable = sub.value - receipts.value;
-    tax.value = Math.round(taxable * .1);
+    tax.value = Math.round(taxable * 0.1);
     totals.value = sub.value - tax.value;
   }
   else{
