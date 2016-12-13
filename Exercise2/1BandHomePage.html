@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="exercise2.css">
   <meta charset="UTF-8">
   <meta name="keywords" content="Jair Daza, Hellhammer, Atom, HTML, CSS">
+  <link rel="stylesheet" href="javahomepage.js">
 
   <title>Homepage</title>
 
@@ -37,5 +38,59 @@
                 </ul>
         </div>
         <hr>
+        <!-- From W3S -->
+        <h2 class="w3-center">Automatic Slideshow</h2>
+        <div class="w3-content w3-section" style="max-width:500px">
+          <img class="mySlides" src="Arcturus4.jpeg" style="width:100%">
+          <img class="mySlides" src="Arcturus9.jpeg" style="width:100%">
+          <img class="mySlides" src="Arcturus1.jpeg" style="width:100%">
+        </div>
+
+        <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+        <br>
+
+        <h3> Tour Dates </h3>
+        <table>
+          <tr>
+           <th>Date</th>
+           <th>Venue</th>
+           <th>Location</th>
+          </tr>
+          <tr>
+           <td>-0</td>
+           <td>-17.7</td>
+          </tr>
+          <tr>
+           <td>32</td>
+           <td>0</td>
+          </tr>
+          <tr>
+           <td>50</td>
+           <td>10</td>
+          </tr>
+          <tr>
+           <td>-100</td>
+           <td>-37.7</td>
+          </tr>
+        </table>
+
+
+
 </body>
 </html>
