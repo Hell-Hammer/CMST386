@@ -160,3 +160,7 @@ th,td{
   border-right: none;
   border-left: none;
 }
+
+#dude {
+  align-items: center;
+}
