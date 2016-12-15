@@ -170,7 +170,7 @@ th,td{
 }
 
 #dude {
-  text-align: center;
+  align: center;
 }
 
 fieldset {
