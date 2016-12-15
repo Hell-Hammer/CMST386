@@ -171,10 +171,10 @@ th,td{
 
 #dude {
   float: right;
-  height: 600px;
-  width: 500px;
-  margin-top: 100px;
-  margin-right: 300px;
+  height: 700px;
+  width: 600px;
+  margin-top: 150px;
+  margin-right: 400px;
 }
 
 fieldset {
@@ -199,7 +199,7 @@ legend {
   height: 100px;
   width: 100px;
   margin-top: 18px;
-  margin-right: 210px;
+  margin-right: 195px;
   border-top-style: dotted;
   border-right-style: dotted;;
   border-bottom-style: dotted;
@@ -212,7 +212,7 @@ legend {
   height: 120px;
   width: 120px;
   margin-top: 100px;
-  margin-right: 190px;
+  margin-right: 185px;
   border-top-style: dotted;
   border-right-style: dotted;;
   border-bottom-style: dotted;
