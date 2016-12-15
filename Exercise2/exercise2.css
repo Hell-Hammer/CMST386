@@ -170,6 +170,7 @@ th,td{
 }
 
 #dude {
+  float: right;
   height: 600px;
   width: 500px;
   margin-top: 100px;
