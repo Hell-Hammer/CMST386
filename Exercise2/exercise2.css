@@ -27,11 +27,16 @@ p {
 #line { color: white }
 
 h3 {
-   text-align: center; font-size: 300%; color: white; font-family: cursive;
+   text-align: center; font-size: 300%;
+   color: white;
+   font-family: cursive;
  }
 
  h2 {
-    text-align: center; font-size: 200%; color: white; font-family: cursive;
+    text-align: center;
+    font-size: 200%;
+    color: white;
+    font-family: cursive;
   }
 
 body {
@@ -142,6 +147,7 @@ h1 {
 
 h2 {
   text-align: center;
+  font-family: cursive;
 }
 
 p {
@@ -173,11 +179,13 @@ th,td{
 }
 
 #dude {
-  float: right;
+  float: center;
   height: 700px;
   width: 600px;
-  margin-top: 150px;
-  margin-right: 400px;
+  margin-top: auto;;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
 }
 
 fieldset {
