@@ -174,7 +174,7 @@ th,td{
   height: 600px;
   width: 500px;
   margin-top: 100px;
-  margin-right: 200px;
+  margin-right: 300px;
 }
 
 fieldset {
@@ -199,7 +199,7 @@ legend {
   height: 100px;
   width: 100px;
   margin-top: 18px;
-  margin-right: 300px;
+  margin-right: 200px;
   border-top-style: dotted;
   border-right-style: dotted;;
   border-bottom-style: dotted;
@@ -212,7 +212,7 @@ legend {
   height: 120px;
   width: 120px;
   margin-top: 100px;
-  margin-right: 200px;
+  margin-right: 180px;
   border-top-style: dotted;
   border-right-style: dotted;;
   border-bottom-style: dotted;
