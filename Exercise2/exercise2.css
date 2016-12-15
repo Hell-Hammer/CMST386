@@ -212,11 +212,12 @@ legend {
 }
 
 .img3 {
-  float: right;
+  float: left;
   height: 120px;
   width: 120px;
   margin-top: 100px;
-  margin-right: 185px;
+  margin-right: 70px;
+  margin-left: 70px;
   border-top-style: dotted;
   border-right-style: dotted;;
   border-bottom-style: dotted;
