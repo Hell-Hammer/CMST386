@@ -20,6 +20,10 @@
   text-align: center;
 }
 
+p {
+  color: white;
+}
+
 #line { color: white }
 
 h3 {
@@ -166,7 +170,7 @@ th,td{
 }
 
 #dude {
-  align-items: center;
+  text-align: center;
 }
 
 fieldset {
@@ -176,4 +180,38 @@ fieldset {
 
 legend {
   text-align: center;
+}
+
+.img1 {
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin-top: 18px;
+  margin-right: 50px;
+}
+
+.img2 {
+  float: right;
+  height: 100px;
+  width: 100px;
+  margin-top: 18px;
+  margin-right: 225px;
+  border-top-style: dotted;
+  border-right-style: dotted;;
+  border-bottom-style: dotted;
+  border-left-style: dotted;;
+  color: white;
+}
+
+.img3 {
+  float: right;
+  height: 120px;
+  width: 120px;
+  margin-top: 100px;
+  margin-right: 215px;
+  border-top-style: dotted;
+  border-right-style: dotted;;
+  border-bottom-style: dotted;
+  border-left-style: dotted;;
+  color: white;
 }
